@@ -1,9 +1,5 @@
-export { default as Home } from '../../components/home/index.vue'
-export { default as User } from '../../components/user/index.vue'
-export { default as AuthLogin } from '../../components/auth/login/index.vue'
-export { default as AuthSignin } from '../../components/auth/signin/index.vue'
-export { default as LayoutsColorModePicker } from '../../components/layouts/colorMode/ColorModePicker.vue'
-export { default as LayoutsHeader } from '../../components/layouts/header/Header.vue'
+export { default as ColorModePicker } from '../../components/ColorModePicker.vue'
+export { default as Header } from '../../components/header.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

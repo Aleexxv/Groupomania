@@ -4,11 +4,10 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _fe55ffe2 = () => interopDefault(import('../pages/enter.vue' /* webpackChunkName: "pages/enter" */))
 const _7615f7cc = () => interopDefault(import('../pages/forum9gag.vue' /* webpackChunkName: "pages/forum9gag" */))
 const _0f060554 = () => interopDefault(import('../pages/forumReddit.vue' /* webpackChunkName: "pages/forumReddit" */))
-const _b7da9250 = () => interopDefault(import('../pages/profil/index.vue' /* webpackChunkName: "pages/profil/index" */))
-const _099cc8aa = () => interopDefault(import('../pages/test.vue' /* webpackChunkName: "pages/test" */))
-const _4dd8f744 = () => interopDefault(import('../pages/profil/auth/enter/index.vue' /* webpackChunkName: "pages/profil/auth/enter/index" */))
+const _e91b57d6 = () => interopDefault(import('../pages/profil.vue' /* webpackChunkName: "pages/profil" */))
 const _f850d5ee = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -23,6 +22,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/enter",
+    component: _fe55ffe2,
+    name: "enter"
+  }, {
     path: "/forum9gag",
     component: _7615f7cc,
     name: "forum9gag"
@@ -32,16 +35,8 @@ export const routerOptions = {
     name: "forumReddit"
   }, {
     path: "/profil",
-    component: _b7da9250,
+    component: _e91b57d6,
     name: "profil"
-  }, {
-    path: "/test",
-    component: _099cc8aa,
-    name: "test"
-  }, {
-    path: "/profil/auth/enter",
-    component: _4dd8f744,
-    name: "profil-auth-enter"
   }, {
     path: "/",
     component: _f850d5ee,

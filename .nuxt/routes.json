@@ -1,38 +1,37 @@
 [
   {
+    "name": "enter",
+    "path": "/enter",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/enter.vue",
+    "chunkName": "pages/enter",
+    "_name": "_fe55ffe2"
+  },
+  {
     "name": "forum9gag",
     "path": "/forum9gag",
     "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/forum9gag.vue",
-    "chunkName": "pages/forum9gag"
+    "chunkName": "pages/forum9gag",
+    "_name": "_7615f7cc"
   },
   {
     "name": "forumReddit",
     "path": "/forumReddit",
     "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/forumReddit.vue",
-    "chunkName": "pages/forumReddit"
+    "chunkName": "pages/forumReddit",
+    "_name": "_0f060554"
   },
   {
     "name": "profil",
     "path": "/profil",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil/index.vue",
-    "chunkName": "pages/profil/index"
-  },
-  {
-    "name": "test",
-    "path": "/test",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/test.vue",
-    "chunkName": "pages/test"
-  },
-  {
-    "name": "profil-auth-enter",
-    "path": "/profil/auth/enter",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil/auth/enter/index.vue",
-    "chunkName": "pages/profil/auth/enter/index"
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil.vue",
+    "chunkName": "pages/profil",
+    "_name": "_e91b57d6"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_f850d5ee"
   }
 ]
