@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+:root {
+    --color: #243746;
+    --color-primary: #158876;
+    --color-secondary: #0e2233;
+    --bg: #f3f5f4;
+    --bgt5: hsla(150, 9%, 96%, .5);
+    --bgt7: hsla(150, 9%, 96%, .7);
+    --bg-secondary: #fff;
+    --border-color: #ddd;
+}
+
+.🌙-mode {
+    --color: #ebf4f1;
+    --color-primary: #41b38a;
+    --color-secondary: #fdf9f3;
+    --bg: #091a28;
+    --bgt5: hsla(207, 63%, 10%, .5);
+    --bgt7: hsla(207, 63%, 10%, .7);
+    --bg-secondary: #071521;
+    --border-color: #0d2538;
+}

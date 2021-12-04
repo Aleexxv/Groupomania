@@ -1,0 +1,20 @@
+{
+  "Home": {
+    "description": "Auto imported from components/home/index.vue"
+  },
+  "User": {
+    "description": "Auto imported from components/user/index.vue"
+  },
+  "AuthLogin": {
+    "description": "Auto imported from components/auth/login/index.vue"
+  },
+  "AuthSignin": {
+    "description": "Auto imported from components/auth/signin/index.vue"
+  },
+  "LayoutsColorModePicker": {
+    "description": "Auto imported from components/layouts/colorMode/ColorModePicker.vue"
+  },
+  "LayoutsHeader": {
+    "description": "Auto imported from components/layouts/header/Header.vue"
+  }
+}

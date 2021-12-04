@@ -1,0 +1,38 @@
+[
+  {
+    "name": "forum9gag",
+    "path": "/forum9gag",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/forum9gag.vue",
+    "chunkName": "pages/forum9gag"
+  },
+  {
+    "name": "forumReddit",
+    "path": "/forumReddit",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/forumReddit.vue",
+    "chunkName": "pages/forumReddit"
+  },
+  {
+    "name": "profil",
+    "path": "/profil",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil/index.vue",
+    "chunkName": "pages/profil/index"
+  },
+  {
+    "name": "test",
+    "path": "/test",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/test.vue",
+    "chunkName": "pages/test"
+  },
+  {
+    "name": "profil-auth-enter",
+    "path": "/profil/auth/enter",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil/auth/enter/index.vue",
+    "chunkName": "pages/profil/auth/enter/index"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
