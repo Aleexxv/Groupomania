@@ -1,9 +1,11 @@
-body{
+body, html{
     padding: 0;
     margin: 0;
     font-family: 'Jura', sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
+	color: var(--color);
+	background: var(--bg);
 }
 
 :root {
@@ -26,4 +28,59 @@ body{
     --bgt7: hsla(207, 63%, 10%, .7);
     --bg-secondary: #071521;
     --border-color: #0d2538;
+}
+
+form{
+	padding: 2rem 0;
+	z-index: 2;
+	input{
+		color: var(--color);
+		display: block;
+		appearance: none;
+		outline: 0;
+		width: 25rem;
+		border: unset;
+		border-bottom: 2px solid var(--color);
+		background: transparent;
+		padding: 1rem;
+		margin: 0 auto 2rem auto;
+		text-align: center;
+		font-size: 1rem;
+		transition-duration: 0.25s;
+		&::placeholder {
+			color: var(--color);
+		}
+		&:focus{
+			width: 30rem;
+			background: rgba(255, 255, 255, 0.287);
+		}
+	}
+} 
+
+.button{
+	appearance: none;
+	outline: 0;
+	background: transparent;
+	border: 2px solid var(--color);
+	padding: 1rem;
+	cursor: pointer;
+	transition-duration: 0.25s;
+	color: var(--color);
+	margin: 0 auto;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 1rem;
+}
+
+svg{
+	fill: var(--color);
+}
+
+a{
+	font-size: 1.5rem;
+	padding: 0 1rem;
+	text-decoration: none;
+	color: var(--color);
+
 }

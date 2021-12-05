@@ -1,74 +1,50 @@
 <template>
-	<div class="content">
-	<Header />
-		<h1 class="hello">Bonjour Alexandre</h1>
-		<NuxtLink to="/forum9gag" class="forumImg link"><img src="~assets/img/9gag.jpg" alt=""><div class="tr tr9gag"><p class="p9gag">Gif</p></div></NuxtLink>
-		<NuxtLink to="/forumReddit" class="forumText link"><img src="~assets/img/reddit.jpg" alt=""><div class="tr"><p class="pReddit">Texte</p></div></NuxtLink>
+	<div>
+		<div class="blog">
+			<div>
+				<NuxtLink to="/blogVideo">
+					<video autoplay relaod muted class="img">
+						<source src="~assets/img/header-video.mp4" type="video/mp4">
+					</video>
+				</NuxtLink>
+			</div>
+			<div>
+				<NuxtLink to="/blogText">
+					<img class="img" src="~assets/img/blogText.jpg" alt="">
+				</NuxtLink>
+			</div>
+		</div>
 	</div>
-</template>
 
+</template>
 
 <script>
 
-export default {
+	export default {
 
-}
+	}
 
 </script>
 
 <style lang="scss" scoped>
 
-.content{
-	background: var(--bg);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-}
+	.blog{
+		display: flex;
+		div{
+			width: 50%;
+			.img{
+				width: 50%;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 8.4%;
+			}
+		}
+	}
 
 
-.hello{
-	position: absolute;
-	font-weight: 900;
-	font-size: 4em;
-	top: 15%;
-	color: var(--color);
-	z-index: 1;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-img{
-	width: 50vw;
-	height: 100vh;
-
-}
-
-.tr{
-	position: absolute;
-	bottom: 0;
-	width: 50%;
-	height: 92%;
-	background: var(--bgt5);
-}
-
-.tr9gag{
-	left: 0;
-}
-
-p{
-	position: absolute;
-	width: 50%;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: inline-block;
-	font-weight: 900;
-	font-size: 5vw;
-	color: var(--color);
-	text-align: center;
-
-}
-
+	.gif{
+		pointer-events: none
+	}
 
 </style>

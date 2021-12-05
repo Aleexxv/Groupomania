@@ -1,31 +1,45 @@
 [
   {
-    "name": "enter",
-    "path": "/enter",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/enter.vue",
-    "chunkName": "pages/enter",
-    "_name": "_fe55ffe2"
+    "name": "about",
+    "path": "/about",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_0e3f0472"
   },
   {
-    "name": "forum9gag",
-    "path": "/forum9gag",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/forum9gag.vue",
-    "chunkName": "pages/forum9gag",
-    "_name": "_7615f7cc"
+    "name": "blogText",
+    "path": "/blogText",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/blogText/index.vue",
+    "chunkName": "pages/blogText/index",
+    "_name": "_56393eea"
   },
   {
-    "name": "forumReddit",
-    "path": "/forumReddit",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/forumReddit.vue",
-    "chunkName": "pages/forumReddit",
-    "_name": "_0f060554"
+    "name": "blogVideo",
+    "path": "/blogVideo",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/blogVideo/index.vue",
+    "chunkName": "pages/blogVideo/index",
+    "_name": "_b4a0349a"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/login/index.vue",
+    "chunkName": "pages/login/index",
+    "_name": "_006db2ba"
   },
   {
     "name": "profil",
     "path": "/profil",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil.vue",
-    "chunkName": "pages/profil",
-    "_name": "_e91b57d6"
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil/index.vue",
+    "chunkName": "pages/profil/index",
+    "_name": "_b7da9250"
+  },
+  {
+    "name": "profil-updateProfil",
+    "path": "/profil/updateProfil",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil/updateProfil.vue",
+    "chunkName": "pages/profil/updateProfil",
+    "_name": "_0678144f"
   },
   {
     "name": "index",

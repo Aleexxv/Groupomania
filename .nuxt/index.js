@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '../layouts/error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -14,12 +14,10 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_83873042 from 'nuxt_plugin_plugin_83873042' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_templatesplugin1064efa4_7cc7f9b4 from 'nuxt_plugin_templatesplugin1064efa4_7cc7f9b4' // Source: ./templates.plugin.1064efa4.js (mode: 'all')
 import nuxt_plugin_axios_6fcc2975 from 'nuxt_plugin_axios_6fcc2975' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_pluginserver_2b2632b2 from 'nuxt_plugin_pluginserver_2b2632b2' // Source: ./color-mode/plugin.server.js (mode: 'server')
 import nuxt_plugin_pluginclient_f69915c2 from 'nuxt_plugin_pluginclient_f69915c2' // Source: ./color-mode/plugin.client.js (mode: 'client')
 import nuxt_plugin_gsapModule_35f304fc from 'nuxt_plugin_gsapModule_35f304fc' // Source: ./gsapModule.js (mode: 'all')
-import nuxt_plugin_auth_38e1fd1b from 'nuxt_plugin_auth_38e1fd1b' // Source: ./auth.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -220,10 +218,6 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_83873042(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_templatesplugin1064efa4_7cc7f9b4 === 'function') {
-    await nuxt_plugin_templatesplugin1064efa4_7cc7f9b4(app.context, inject)
-  }
-
   if (typeof nuxt_plugin_axios_6fcc2975 === 'function') {
     await nuxt_plugin_axios_6fcc2975(app.context, inject)
   }
@@ -238,10 +232,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_gsapModule_35f304fc === 'function') {
     await nuxt_plugin_gsapModule_35f304fc(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_auth_38e1fd1b === 'function') {
-    await nuxt_plugin_auth_38e1fd1b(app.context, inject)
   }
 
   // Lock enablePreview in context

@@ -4,10 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _fe55ffe2 = () => interopDefault(import('../pages/enter.vue' /* webpackChunkName: "pages/enter" */))
-const _7615f7cc = () => interopDefault(import('../pages/forum9gag.vue' /* webpackChunkName: "pages/forum9gag" */))
-const _0f060554 = () => interopDefault(import('../pages/forumReddit.vue' /* webpackChunkName: "pages/forumReddit" */))
-const _e91b57d6 = () => interopDefault(import('../pages/profil.vue' /* webpackChunkName: "pages/profil" */))
+const _0e3f0472 = () => interopDefault(import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */))
+const _56393eea = () => interopDefault(import('../pages/blogText/index.vue' /* webpackChunkName: "pages/blogText/index" */))
+const _b4a0349a = () => interopDefault(import('../pages/blogVideo/index.vue' /* webpackChunkName: "pages/blogVideo/index" */))
+const _006db2ba = () => interopDefault(import('../pages/login/index.vue' /* webpackChunkName: "pages/login/index" */))
+const _b7da9250 = () => interopDefault(import('../pages/profil/index.vue' /* webpackChunkName: "pages/profil/index" */))
+const _0678144f = () => interopDefault(import('../pages/profil/updateProfil.vue' /* webpackChunkName: "pages/profil/updateProfil" */))
 const _f850d5ee = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -22,21 +24,29 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/enter",
-    component: _fe55ffe2,
-    name: "enter"
+    path: "/about",
+    component: _0e3f0472,
+    name: "about"
   }, {
-    path: "/forum9gag",
-    component: _7615f7cc,
-    name: "forum9gag"
+    path: "/blogText",
+    component: _56393eea,
+    name: "blogText"
   }, {
-    path: "/forumReddit",
-    component: _0f060554,
-    name: "forumReddit"
+    path: "/blogVideo",
+    component: _b4a0349a,
+    name: "blogVideo"
+  }, {
+    path: "/login",
+    component: _006db2ba,
+    name: "login"
   }, {
     path: "/profil",
-    component: _e91b57d6,
+    component: _b7da9250,
     name: "profil"
+  }, {
+    path: "/profil/updateProfil",
+    component: _0678144f,
+    name: "profil-updateProfil"
   }, {
     path: "/",
     component: _f850d5ee,
