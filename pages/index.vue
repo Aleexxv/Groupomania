@@ -4,7 +4,7 @@
 			<div>
 				<NuxtLink to="/blogVideo">
 					<video autoplay relaod muted class="img">
-						<source src="~assets/img/header-video.mp4" type="video/mp4">
+						<source src="~assets/img/blogVideo.mp4" type="video/mp4">
 					</video>
 				</NuxtLink>
 			</div>
@@ -21,6 +21,8 @@
 <script>
 
 	export default {
+
+		auth: false,
 
 	}
 

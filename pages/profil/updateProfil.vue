@@ -4,9 +4,9 @@
 				<input v-model="firstName" type="text" placeholder="Nom">
 				<input v-model="lastName" type="text" placeholder="Prénom">
 				<input v-model="email" type="email" placeholder="Email">
-				<input v-model="password" type="password" placeholder="Mot de passe">
-				<input v-model="repeatPassword" type="password" placeholder="Répetez votre mot de passe">
-				<button class="button" @click="updateProfil()">Modifier mon profil</button>
+				<input v-model="password" type="text" placeholder="Mot de passe">
+				<input v-model="repeatPassword" type="text" placeholder="Répetez votre mot de passe">
+				<button class="button" :class="{ 'buttonDisabled' : !updateProfil() }">Modifier mon profil</button>
 			</form>
 		</div>
 
@@ -15,6 +15,8 @@
 
 <script>
 export default {
+
+
 	data() {
 		return {
 			firstName: '',
@@ -26,19 +28,12 @@ export default {
 	},
 	methods: {
 		updateProfil() {
-			axios.post('/api/users', {
-				firstName: this.firstName,
-				lastName: this.lastName,
-				email: this.email,
-				password: this.password
-			})
-			.then(response => {
-				console.log(response.data);
-				this.$router.push('/profil');
-			})
-			.catch(error => {
-				console.log(error);
-			})
+			const regEmail = new RegExp('^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$', 'g')
+			const regPass = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}')
+			
+			if(this.fisrtName && this.lastName && this.email && this.password && this.repeatPassword != '' && regEmail.test(this.email) && regPass.test(this.password) && (regPass.test(this.password) && this.password === this.repeatPassword)){
+				return true;
+			}
 		}
 	}
 }

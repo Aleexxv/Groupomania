@@ -18,6 +18,9 @@ import nuxt_plugin_axios_6fcc2975 from 'nuxt_plugin_axios_6fcc2975' // Source: .
 import nuxt_plugin_pluginserver_2b2632b2 from 'nuxt_plugin_pluginserver_2b2632b2' // Source: ./color-mode/plugin.server.js (mode: 'server')
 import nuxt_plugin_pluginclient_f69915c2 from 'nuxt_plugin_pluginclient_f69915c2' // Source: ./color-mode/plugin.client.js (mode: 'client')
 import nuxt_plugin_gsapModule_35f304fc from 'nuxt_plugin_gsapModule_35f304fc' // Source: ./gsapModule.js (mode: 'all')
+import nuxt_plugin_auth_38e1fd1b from 'nuxt_plugin_auth_38e1fd1b' // Source: ./auth.js (mode: 'all')
+import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ../plugins/axios (mode: 'all')
+import nuxt_plugin_auth_7f7561ce from 'nuxt_plugin_auth_7f7561ce' // Source: ../plugins/auth.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -232,6 +235,18 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_gsapModule_35f304fc === 'function') {
     await nuxt_plugin_gsapModule_35f304fc(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_auth_38e1fd1b === 'function') {
+    await nuxt_plugin_auth_38e1fd1b(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_3566aa80 === 'function') {
+    await nuxt_plugin_axios_3566aa80(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_auth_7f7561ce === 'function') {
+    await nuxt_plugin_auth_7f7561ce(app.context, inject)
   }
 
   // Lock enablePreview in context

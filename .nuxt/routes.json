@@ -1,12 +1,5 @@
 [
   {
-    "name": "about",
-    "path": "/about",
-    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/about/index.vue",
-    "chunkName": "pages/about/index",
-    "_name": "_0e3f0472"
-  },
-  {
     "name": "blogText",
     "path": "/blogText",
     "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/blogText/index.vue",
@@ -33,6 +26,13 @@
     "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/profil/index.vue",
     "chunkName": "pages/profil/index",
     "_name": "_b7da9250"
+  },
+  {
+    "name": "login-admin",
+    "path": "/login/admin",
+    "component": "/home/aleexxv/Documents/Professionnel/_cours/_openClassroom/groupomania/pages/login/admin/index.vue",
+    "chunkName": "pages/login/admin/index",
+    "_name": "_43268923"
   },
   {
     "name": "profil-updateProfil",

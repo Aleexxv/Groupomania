@@ -22,10 +22,10 @@ export default {
 		'~/assets/css/main.scss'
 	],
 
-	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-	plugins: [
-	/* 	'~/plugins/api.js', */
-	],
+	loading: {
+		color: '#FFF78C',
+		height: '100px'
+	},
 
 	// Auto import components: https://go.nuxtjs.dev/config-components
 	components: true,
@@ -51,22 +51,24 @@ export default {
 	
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
-		// https://go.nuxtjs.dev/axios
 		'@nuxtjs/axios', 
-/* 		'nuxt-fontawesome', */
-/* 		'@nuxtjs/auth-next' */
+		'@nuxtjs/auth-next'
 	],
-	fontawesome: {
 
+	auth: {
+		plugins: [ { src: '~/plugins/axios', ssr: true }, '~/plugins/auth.js' ]
 	},
 
-/* 	router: {
-		middleware: ['auth']
-	}, */
-
-	// Axios module configuration: https://go.nuxtjs.dev/config-axios
 	axios: {
-		baseURL: 'http://localhost:3306'
+		baseURL: process.env.API_URL,
+	},
+
+	router: {
+		middleware: ['auth']
+	},
+
+	fontawesome: {
+
 	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build

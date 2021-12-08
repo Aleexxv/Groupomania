@@ -4,11 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _0e3f0472 = () => interopDefault(import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */))
 const _56393eea = () => interopDefault(import('../pages/blogText/index.vue' /* webpackChunkName: "pages/blogText/index" */))
 const _b4a0349a = () => interopDefault(import('../pages/blogVideo/index.vue' /* webpackChunkName: "pages/blogVideo/index" */))
 const _006db2ba = () => interopDefault(import('../pages/login/index.vue' /* webpackChunkName: "pages/login/index" */))
 const _b7da9250 = () => interopDefault(import('../pages/profil/index.vue' /* webpackChunkName: "pages/profil/index" */))
+const _43268923 = () => interopDefault(import('../pages/login/admin/index.vue' /* webpackChunkName: "pages/login/admin/index" */))
 const _0678144f = () => interopDefault(import('../pages/profil/updateProfil.vue' /* webpackChunkName: "pages/profil/updateProfil" */))
 const _f850d5ee = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -24,10 +24,6 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/about",
-    component: _0e3f0472,
-    name: "about"
-  }, {
     path: "/blogText",
     component: _56393eea,
     name: "blogText"
@@ -43,6 +39,10 @@ export const routerOptions = {
     path: "/profil",
     component: _b7da9250,
     name: "profil"
+  }, {
+    path: "/login/admin",
+    component: _43268923,
+    name: "login-admin"
   }, {
     path: "/profil/updateProfil",
     component: _0678144f,
